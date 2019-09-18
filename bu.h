@@ -85,7 +85,7 @@ static inline uint8_t hex2bin(char c) {
 //        that will be ignored. For example, "DEAD BEEF" should
 //        be legal input resulting in te value 0xDEADBEEF.
 
-void bu_readhex(bigunsigned * a_ptr, char *s);
+void bu_readhex(bigunsigned * a_ptr, char *s, uint32 base);
 // 
 void bu_dbg_printf(bigunsigned *a_ptr);
 
