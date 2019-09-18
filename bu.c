@@ -34,10 +34,18 @@ void bu_clear(bigunsigned *a_ptr) {
 void bu_shl_ip(bigunsigned* a_ptr, uint16_t cnt) {
   uint16_t wrds = cnt >> 5; // # of whole words to shift
   uint16_t bits = cnt &0x1f;// number of bits in a word to shift
-
   uint32_t mask = 0xffffffff << bits;
-
+  uint32_t count =0;
+  uint32_t used =a_ptr->digit[a_ptr->used-1];
   // You implement. Avoid memory copying as much as possible.
+  
+  //:( 
+  //base=base-1;
+  //A[base] = 0;
+  
+  
+  
+  
 }
 
 // Produce a = b + c
